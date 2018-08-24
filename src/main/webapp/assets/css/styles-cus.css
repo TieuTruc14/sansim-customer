@@ -1,0 +1,338 @@
+/*============ General ============*/
+.container {background: #ffffff; }
+
+body{ max-width:1680px;min-width:1000px;margin:0 auto!important; background: #fff !important;font-size:13px;}
+
+#nav-bar, #footer {background: #3784c8;}
+
+/*============ Header ============*/
+
+#logo {background-color: #ffffff;}
+
+.top-head>a{color: #666666 !important;}
+
+.top-head>a:hover { background: none !important; color: #000000 ! important;}
+
+#main_menu {background: #3784c8;}
+
+.nav-item>a { color: #fff !important;}
+
+.nav-item>a:hover {background: #2c6aa0 ! important; }
+
+/*============ Form group ============*/
+
+.container_form {background-image: url(../images/cus/content.png); background-size: cover; background-repeat: no-repeat; padding-top: 5px; padding-bottom: 50px;}
+
+#form_group {background: #fec002; border-radius: 10px; margin: 0 auto; width: 70%; height: 60%; margin-bottom: 30px;}
+
+#h3_form {color:#4c4c4c; font-family: Tahoma; padding-top: 10px; padding-bottom: 10px; border-bottom: 1px solid #ddd; font-weight: bold; font-size: 22px; text-align: center;}
+
+label {color: #4c4c4c; font-size: 10pt;}
+
+.form-inline { margin-bottom: 60px;}
+
+.btn-search {background: #29a1e5; color: #ffffff;}
+
+.tim_kiem {margin: 0 auto; border-top: 1px solid #ddd;  }
+
+p#note_form {font-style: italic; font-size: 10px; float: right; margin-right: 20px;}
+
+.so-can-tim { display: inline-block; width: 376px; height: 32px;}
+
+/*============ Content ============*/
+
+#left_table_1, #left_table_2, #right_table_1 {background: #ffffff; color: #137fd2; border-radius: 3px; padding-bottom: 20px;}
+
+.padding0 { padding-left: 0px !important ; padding-right: 0px !important;}
+
+#left_table_1>li, #left_table_2>li, #right_table_1>li {padding-top: 15px;}
+
+#left_table_1>li>a, #left_table_2>li>a, #right_table_1>li>a {color: #666666; font-size: 13px;}
+
+#left_table_1>li>a:hover, #left_table_2>li>a:hover, #right_table_1>li>a:hover {color: #1a1a1a; }
+
+/* Column 1 */
+
+.title {color: #ffffff; background: #337cbc; font-size: 10pt; padding: 10px 20px 10px 20px; font-weight: bold; text-transform: uppercase; font-family: Tahoma; margin: 0 auto;}
+
+
+/* Column 2 */
+
+.title_table_2 {color: #4b91c7; font-size: 24pt; text-align: center; border-top: 3px solid #698fda; padding-top: 11px; font-family: Arial, sans-serif;}
+
+.table { background: #fff;}
+
+th {font-size: 14px; color: #464646; font-family: Tahoma; font-weight: bold;}
+
+td {text-align: center; vertical-align: middle !important;}
+
+td>a {color: #337cbc;}
+
+td>a:hover { color: #214f78;}
+
+.btn-color {background: #ffb300; color: #464646;}
+
+.btn-color:hover {background: #febb02;}
+
+thead {background: #f6f4f4;}
+
+#heading_table>th {padding: 10px; text-align: center;}
+
+#pagination_page {text-align: center;}
+
+/* Column 3 */
+#figure_index {margin-bottom:20px; margin-top: 10px}
+
+figcaption>a:hover { color: #000000; }
+
+/*============ Footer ============*/
+
+#menu_footer {padding-bottom: 0px;}
+
+ul#menu_footer>li {border-right: 1px solid #ddd;}
+
+.social_icon {width: 35px; height: 35px; margin-right: 10px;}
+
+#sign_icon {width: 240px; height: 80px; float: right; padding-right: 20px;}
+
+#norton {padding: 10px 20px 15px 15px;}
+
+
+.breadcrumb>a {color: #000000}
+
+.breadcrumb>a:hover { color: #1f79c3;}
+
+/*============ Trang giới thiệu ============*/
+
+#title_gioi_thieu {color: #666666; font-size: 24px; border-bottom: 3px solid #698fda; text-transform: uppercase;}
+
+#note {color: red; font-style: italic; font-family: Tahoma; font-size: 12px;}
+
+/*============ Trang hướng dẫn ============*/
+
+.title_huong_dan {text-align: center; font-size: 29px; color: #1f79c3; text-transform: uppercase;}
+
+.img_huong_dan {display: block; margin-left: auto; margin-right: auto;}
+
+.td_huong_dan {text-align: left; font-size: 13px; padding-right: 100px; padding-bottom: 30px;}
+
+.huong_dan_sim>a {color: #3d8bcb; font-weight: bold; margin-top: 0px;}
+
+.huong_dan_sim>a:hover, .huong_dan_sim>a:focus { color: #2c6aa0; }
+
+.btn-chi-tiet {color: #fff; background: #ff4040; width: 96px; height: 31px;}
+
+.question {text-align: left;}
+
+.panel-title>a {font-size: 13px;}
+
+.panel-title>a:hover, .panel-title>a:focus {color: #000000 ! important;}
+
+/*============ Trang tin tuc ============*/
+
+article { clear: both; overflow: auto;}
+
+.title_tin_tuc { font-size: 14px; color: #1f79c3; margin-top: 0px; font-family: Tahoma; font-weight: bold;}
+
+.title_tin_tuc:hover {color: #2c6aa0;}
+
+.figure_tin_tuc {
+    float: left; width: 270px; height: 200px; margin-right: 20px;
+    display:inline-block;
+    vertical-align: top;
+    background-size:cover;
+    background-position:50% 50%;
+}
+
+.figure_tin_tuc img{
+    display: block;
+    width: 100%;
+    height:90%;
+    object-fit: cover;
+    /* OLD IE */
+    zoom: 1;
+    filter: alpha(opacity=0);
+}
+
+.figure_tin_tuc_detail{
+    float: left; width: 100%; height: 200px;
+    display:inline-block;
+    vertical-align: top;
+    background-size:cover;
+    background-position:50% 50%;
+    margin-bottom:10px!important;
+}
+.figure_tin_tuc_detail img{
+    display: block;
+    width: 100%;
+    height:200px!important;
+    object-fit: cover;
+    /* OLD IE */
+    zoom: 1;
+    filter: alpha(opacity=0);
+}
+
+.p_tin_tuc{font-size: 12px; height: 50px; overflow: hidden;}
+
+hgroup p { font-size: 11px;}
+
+span.facebook_ttt { background: #4666b0; color: #fff; padding: 5px; border-radius: 2px;}
+
+/*============ Trang tin tuc trong ============*/
+
+#title_ttt {color: #1f79c3; font-family: Tahoma; font-weight: bold; font-size: 18px;}
+
+.img_ttt{display: block; margin-left: auto; margin-right: auto;}
+
+.card-title>a {color: #1a1a1a; }
+
+.card-title>a:hover { color: #cc0000;}
+
+/*============ Trang lien he ============*/
+
+.form-control_lienhe {margin-bottom: 20px; border-radius: 0px !important; padding: 5px;}
+
+.col-2 {column-count: 2;}
+
+.two_column {display: inline-block; background-image: url(../images/cus/background.png); width: 100%;}
+
+.col-left{float: left;}
+
+.col-right{ margin-top: 50px;}
+
+.btn-gui {width: 90px; height: 40px; background: #ff4040; color: #ffffff;}
+
+#title_lien_he {color: #ffc000; font-size: 30px;}
+
+.contact {color: #ffffff; font-size: 17px;}
+
+/*============ Chi tiết ============*/
+
+#content h3 {color: #000000; font-weight: bold; font-size: 20px;}
+
+
+/*MANHPT---TOOLTIP*/
+.tooltip {
+    position: absolute;
+    z-index: 1030;
+    display: block;
+    font-size: 12px;
+    line-height: 1.4;
+    opacity: 0;
+    filter: alpha(opacity = 0);
+    visibility: visible;
+    text-align: left;
+}
+
+.tooltip.in {
+    opacity: 0.9;
+    filter: alpha(opacity = 90);
+}
+
+.tooltip.top {
+    padding: 5px 0;
+    margin-top: -3px;
+}
+
+.tooltip.right {
+    padding: 0 5px;
+    margin-left: 3px;
+}
+
+.tooltip.bottom {
+    padding: 5px 0;
+    margin-top: 3px;
+}
+
+.tooltip.left {
+    padding: 0 5px;
+    margin-left: -3px;
+}
+
+.tooltip-inner {
+    max-width: 400px!important;
+    padding: 3px 8px;
+    color: #ffffff;
+    text-align: center;
+    text-decoration: none;
+    background-color: #000000;
+    border-radius: 4px;
+}
+
+.tooltip-arrow {
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-color: transparent;
+    border-style: solid;
+}
+
+.tooltip.top .tooltip-arrow {
+    bottom: 0;
+    left: 50%;
+    margin-left: -5px;
+    border-top-color: #000000;
+    border-width: 5px 5px 0;
+}
+
+.tooltip.top-left .tooltip-arrow {
+    bottom: 0;
+    left: 5px;
+    border-top-color: #000000;
+    border-width: 5px 5px 0;
+}
+
+.tooltip.top-right .tooltip-arrow {
+    right: 5px;
+    bottom: 0;
+    border-top-color: #000000;
+    border-width: 5px 5px 0;
+}
+
+.tooltip.right .tooltip-arrow {
+    top: 50%;
+    left: 0;
+    margin-top: -5px;
+    border-right-color: #000000;
+    border-width: 5px 5px 5px 0;
+}
+
+.tooltip.left .tooltip-arrow {
+    top: 50%;
+    right: 0;
+    margin-top: -5px;
+    border-left-color: #000000;
+    border-width: 5px 0 5px 5px;
+}
+
+.tooltip.bottom .tooltip-arrow {
+    top: 0;
+    left: 50%;
+    margin-left: -5px;
+    border-bottom-color: #000000;
+    border-width: 0 5px 5px;
+}
+
+.tooltip.bottom-left .tooltip-arrow {
+    top: 0;
+    left: 5px;
+    border-bottom-color: #000000;
+    border-width: 0 5px 5px;
+}
+
+.tooltip.bottom-right .tooltip-arrow {
+    top: 0;
+    right: 5px;
+    border-bottom-color: #000000;
+    border-width: 0 5px 5px;
+}
+
+.bg-intruction-search{
+    text-align:left;
+}
+.bg-intruction-search ul {
+    list-style-type: none;
+}
+.bg-intruction-search ul li{
+    list-style-type: none;
+}

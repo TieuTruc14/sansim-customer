@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC
+        "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"
+        "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+<tiles-definitions>
+
+    <definition name="default" template="/WEB-INF/views/layout/layout.jsp">
+        <put-attribute name="title" value="Home" />
+        <put-attribute name="header" value="/WEB-INF/views/layout/header.jsp" />
+        <put-attribute name="footer" value="/WEB-INF/views/layout/footer.jsp" />
+        <put-attribute name="page" value="/WEB-INF/views/layout/blank.jsp" />
+    </definition>
+    
+    <definition name="admin" template="/WEB-INF/views/layoutCus/layout.jsp">
+        <put-attribute name="title" value="Home" />
+        <put-attribute name="header" value="/WEB-INF/views/layoutCus/header.jsp" />
+        <put-attribute name="footer" value="/WEB-INF/views/layoutCus/footer.jsp" />
+        <put-attribute name="page" value="/WEB-INF/views/layoutCus/blank.jsp" />
+        <put-attribute name="leftpanel" value="/WEB-INF/views/layoutCus/leftpanel.jsp" />
+    </definition>
+
+    <definition name="index" extends="default">
+        <put-attribute name="title" value="Sàn sim"/>
+        <put-attribute name="page" value="/WEB-INF/views/index.jsp" />
+    </definition>
+
+    <definition name="index.link" extends="default">
+        <put-attribute name="title" value="Sàn sim"/>
+        <put-attribute name="page" value="/WEB-INF/views/buyer/index.link.jsp" />
+    </definition>
+
+    <definition name="demo" extends="default">
+        <put-attribute name="page" value="/WEB-INF/views/demo.jsp" />
+    </definition>
+    <definition name="login" template="/WEB-INF/views/login.jsp">
+    </definition>
+
+    <definition name="404" template="/WEB-INF/views/404.jsp">
+    </definition>
+    <definition name="403" template="/WEB-INF/views/403.jsp">
+    </definition>
+    
+    <definition name="indexCus" extends="admin">
+        <put-attribute name="title" value="Sàn sim số Mobifone"/>
+        <put-attribute name="page" value="/WEB-INF/views/customer/index.jsp" />
+    </definition>
+    <definition name="register" extends="default">
+        <put-attribute name="title" value="Đăng ký tài khoản"/>
+        <put-attribute name="page" value="/WEB-INF/views/customer/register.jsp" />
+    </definition>
+    <definition name="editProfile" extends="admin">
+        <put-attribute name="title" value="Thông tin người bán"/>
+        <put-attribute name="page" value="/WEB-INF/views/customer/profile.jsp" />
+    </definition>
+    
+    <definition name="forwardMsisdn" extends="admin">
+        <put-attribute name="title" value="Chuyển số cho người bán khác"/>
+        <put-attribute name="page" value="/WEB-INF/views/customer/forward.jsp" />
+    </definition>
+    <definition name="forwardLog" extends="admin">
+        <put-attribute name="title" value="Danh sách số chuyển cho người bán khác"/>
+        <put-attribute name="page" value="/WEB-INF/views/customer/forwardLog.jsp" />
+    </definition>
+    <definition name="receiverLog" extends="admin">
+        <put-attribute name="title" value="Danh sách số chuyển cho người bán khác"/>
+        <put-attribute name="page" value="/WEB-INF/views/customer/receiverLog.jsp" />
+    </definition>
+    <definition name="viewMsisdn" extends="admin">
+        <put-attribute name="title" value="Quản lý danh sách số"/>
+        <put-attribute name="page" value="/WEB-INF/views/customer/msisdn.jsp" />
+    </definition>
+    <definition name="uploadMsisdn" extends="admin">
+        <put-attribute name="title" value="Đăng số"/>
+        <put-attribute name="page" value="/WEB-INF/views/customer/upload.jsp" />
+    </definition>
+    <definition name="detailMsisdn" extends="admin">
+        <put-attribute name="title" value="Chi tiết"/>
+        <put-attribute name="page" value="/WEB-INF/views/customer/detail.jsp" />
+    </definition>
+    <definition name="editMsisdn" extends="admin">
+        <put-attribute name="title" value="Sửa thông tin số"/>
+        <put-attribute name="page" value="/WEB-INF/views/customer/edit.jsp" />
+    </definition>
+    <definition name="transpayLog" extends="admin">
+        <put-attribute name="title" value="Lịch sử đăng ký gói cước"/>
+        <put-attribute name="page" value="/WEB-INF/views/customer/transpay.jsp" />
+    </definition>
+    <definition name="smsLog" extends="admin">
+        <put-attribute name="title" value="Lịch sử MO MT"/>
+        <put-attribute name="page" value="/WEB-INF/views/customer/smsLog.jsp" />
+    </definition>
+    <definition name="shopManager" extends="admin">
+        <put-attribute name="title" value="Đăng số"/>
+        <put-attribute name="page" value="/WEB-INF/views/customer/shopManager.jsp" />
+    </definition>
+
+    <definition name="sim.detail" extends="default">
+        <put-attribute name="title" value="Thông tin sim"/>
+        <put-attribute name="page" value="/WEB-INF/views/buyer/sim.detail.jsp" />
+    </definition>
+    <definition name="customer.sims" extends="default">
+        <put-attribute name="title" value="Danh sách số người bán"/>
+        <put-attribute name="page" value="/WEB-INF/views/buyer/customer.sims.jsp" />
+    </definition>
+    
+    <definition name="viewInfoPackage" extends="admin">
+        <put-attribute name="title" value="Danh sách gói đăng số"/>
+        <put-attribute name="page" value="/WEB-INF/views/customer/viewInfoPackage.jsp" />
+    </definition>
+    
+    <!--Begin gioi thieu, tin tuc, bai viet, lien he, huong dan-->
+
+    <definition name="news.list" extends="default">
+        <put-attribute name="title" value="Tin tức"/>
+        <put-attribute name="page" value="/WEB-INF/views/category/news/list.jsp" />
+    </definition>
+
+    <definition name="news.detail" extends="default">
+        <put-attribute name="title" value="Tin tức"/>
+        <put-attribute name="page" value="/WEB-INF/views/category/news/detail.jsp" />
+    </definition>
+
+    <definition name="introduce" extends="default">
+        <put-attribute name="title" value="Giới thiệu"/>
+        <put-attribute name="page" value="/WEB-INF/views/category/introduce/detail.jsp" />
+    </definition>
+
+    <definition name="guide" extends="default">
+        <put-attribute name="title" value="Hướng dẫn"/>
+        <put-attribute name="page" value="/WEB-INF/views/category/guide/list.jsp" />
+    </definition>
+
+    <definition name="guide.detail" extends="default">
+        <put-attribute name="title" value="Hướng dẫn"/>
+        <put-attribute name="page" value="/WEB-INF/views/category/guide/detail.jsp" />
+    </definition>
+
+    <definition name="contact" extends="default">
+        <put-attribute name="title" value="Liên hệ"/>
+        <put-attribute name="page" value="/WEB-INF/views/category/contact/detail.jsp" />
+    </definition>
+    <!--End gioi thieu, tin tuc, bai viet, lien he, huong dan-->
+    
+    <definition name="uploadGuide" extends="admin">
+        <put-attribute name="title" value="Hướng dẫn đăng số"/>
+        <put-attribute name="page" value="/WEB-INF/views/customer/uploadMsisdnGuide.jsp" />
+    </definition>
+    
+    <definition name="customer/downloadExcel" extends="admin">
+        <put-attribute name="title" value="Tải danh sách số"/>
+        <put-attribute name="page" value="/WEB-INF/views/customer/uploadMsisdnGuide.jsp" />
+    </definition>
+    
+    
+
+</tiles-definitions>
